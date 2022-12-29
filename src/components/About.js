@@ -16,7 +16,7 @@ const About = () => {
             className="vertical-timeline-element--work"
             contentStyle={{
               fontWeight: 300,
-              background: "rgb(21,24,31",
+              background: "rgb(21,24,31)",
               color: "#888",
             }}
             contentArrowStyle={{ borderRight: "7px solid #fff" }}

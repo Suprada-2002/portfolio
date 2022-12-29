@@ -1,0 +1,62 @@
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    .project-item{
+        border-radius: 1opx;
+        width: 270px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px 5px 10px;
+        flex-direction: column;
+        background-color: rgb(21,24,31);
+
+        img{
+            height: auto;
+            max-width: 100%;
+            border-radius: 20px;
+            vertical-align: middle;
+        }
+
+        .description {
+            
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .live{
+        font-size: 14px;
+        padding: 5px;
+        border:2px solid #fff;
+    }
+}
+ 
+}
+/*
+   @media only screen and (max-width: 900px) {
+        .project-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }*/
