@@ -4,8 +4,10 @@ import {FaGithubAlt} from 'react-icons/fa'
 
 const Projects = () => {
 return(
-    <>
+    < div className='pcontainer'>
+<h3 className='header'>check out my projects</h3>
     <div className="project-container">
+      
        {ProjectData && ProjectData.map((n) => (
         <div className='project-item' key={n.id}>
            <h3> {n.title}</h3>
@@ -19,7 +21,7 @@ return(
         ))}
     </div>
 
-    </>
+    </div>
     )}
 
 export default Projects;

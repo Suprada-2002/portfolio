@@ -1,4 +1,22 @@
 .home-container {
-  margin-top: 25px;
-  text-align: center;
+ padding: 80px;
+ text-align: center;
+ color: #fff;
+
+ .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+
+ img {
+    padding-right: 10px;
+    height: auto;
+    max-width:30px;
+    width: 100%;
+    cursor: pointer;
+ }
+
+
 }

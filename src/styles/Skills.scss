@@ -1,0 +1,27 @@
+.heading{
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-align: center;
+
+    @media (max-width:600px){
+        font-size: 4vw;
+    }
+}
+
+.skills-container{
+   display: grid;
+   grid-template-columns:repeat(auto-fit, minmax(1fr));
+   place-items: center;
+    ul{
+        list-style: none;
+    }
+
+
+    @media (max-width:500px){
+ 
+        .skills-container{
+       grid-template-columns: 1fr;
+        }
+    }
+}

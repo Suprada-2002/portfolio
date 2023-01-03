@@ -4,11 +4,13 @@ import "../styles/Home.scss";
 const Home = () => {
   return (
     <div className="home-container">
-      <p>Hello i am </p>
-      <h2>
-        <strong>SUPRADA TRIPATHY</strong>
-      </h2>
-      <h3>Web Developer</h3>
+     <h1>Suprada Tripathy</h1>
+     <p>Web Developer</p>
+     <div className="icons">
+      <a href="" ><img src="github.svg" /></a>
+      <a href="" ><img src="linkedin.svg" /></a>
+      <a href="" ><img src="gmail.svg" /></a>
+     </div>
     </div>
   );
 };

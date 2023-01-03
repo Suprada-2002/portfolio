@@ -1,7 +1,28 @@
-.container {
-  margin-top: 20px;
-  background-color: #62656d;
-  height: 6vh;
-  opacity: 0.6;
-  border-radius: 10px;
+.navbar-container{
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1vw;
+  font-weight: 300;
+
+  .link{
+    text-decoration: none;
+    padding-right: 10px;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 500px){
+    .link {
+      float: none;
+     
+    }
+  }
+
 }
+

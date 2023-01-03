@@ -3,8 +3,16 @@ import {
   Route,
   Routes,
   BrowserRouter as Router,
-  Switch,
+  
 } from "react-router-dom";
+
+/**
+ * a header - home
+ * a nav bar
+ * main content
+ * sidebar
+ * footer
+ */
 
 //components
 import Home from "./components/Home";
@@ -15,15 +23,20 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
+
+     <Router>
+       <div className="App">
+         <Home />
         <Navbar />
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
+     <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={ <Skills />} />
+        <Route path="/projects" element={ <Projects /> } />
+        
+        </Routes>
       </div>
-    </Router>
+      </Router>
+  
   );
 }
 

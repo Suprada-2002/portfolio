@@ -4,33 +4,19 @@ import { FaNode, FaReact } from "react-icons/fa";
 
 const Skills = () => {
   return (
+
+<>
+<h3 className="heading"><i>"Debugging is like being the detective in a crime movie where you are
+  also the murderer."</i></h3>
     <div className="skills-container">
-      <div className="front-end">
-        <h3>Front End</h3>
-        <div className="content">
-          <ul>
-            <li>
-              <FaReact />
-            </li>
-            <li>
-              <SiNextdotjs />
-            </li>
-            <li>
-              <SiTailwindcss />
-            </li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-      <div className="backend">
-        <h3>Back End</h3>
-        <ul>
-          <li>
-            <FaNode />
-          </li>
-        </ul>
-      </div>
+      
+    <div className="language">frontedn</div>
+         <div className="front-end">language</div>
+         <div className="back-end">back</div>
+        
     </div>
+    </>
+
   );
 };
 
