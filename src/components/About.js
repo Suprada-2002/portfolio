@@ -5,9 +5,12 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "../styles/About.scss";
 import TimeLineData from "../assets/timeLine.js";
+import { TitleCard } from "./TitleCard";
 
 const About = () => {
   return (
+    <>
+    <TitleCard />
     <VerticalTimeline className="about-container">
       {TimeLineData &&
         TimeLineData.map((n) => (
@@ -18,18 +21,22 @@ const About = () => {
               fontWeight: 300,
               background: "rgb(21,24,31)",
               color: "#888",
+              fontSize:"15px" ,
             }}
             contentArrowStyle={{ borderRight: "7px solid #fff" }}
             date={n.date}
             iconStyle={{ background: "#121316", color: "##888" }}
             icon={n.iconSrc}
           >
-            <h3 className="vertical-timeline-element-title">{n.title}</h3>
+            <h3 className="vertical-timeline-element-title"
+            
+            >{n.title}</h3>
             <h4 className="vertical-timeline-element-subtitle">{n.location}</h4>
-            <p>{n.description}</p>
+            <p className="about-description">{n.description}</p>
           </VerticalTimelineElement>
         ))}
     </VerticalTimeline>
+    </>
   );
 };
 

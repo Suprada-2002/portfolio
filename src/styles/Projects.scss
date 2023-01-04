@@ -10,9 +10,11 @@
     gap: 25px;
     flex-wrap: wrap;
 
+   
+
     .project-item{
         border-radius: 1opx;
-        width: 270px;
+        width: auto;
         height: auto;
         display: flex;
         align-items: center;
@@ -21,18 +23,32 @@
         flex-direction: column;
         background-color: rgb(21,24,31);
 
+        .project-content{
+            display: flex;
+
+
+            .left{
+                flex-grow: 1;
+            }
+
+            .right{
+                flex-grow: 1;
+            }
+        }
+
         img{
+            width: 400px;
             height: auto;
             max-width: 100%;
             border-radius: 20px;
-            vertical-align: middle;
+            
+        }
+        @media only screen and (max-width: 900px) {
+       .project-content{
+        flex-direction: column;
+       }
         }
 
-        .description {
-            
-            text-align: center;
-            font-weight: 300;
-        }
     }
 
 .buttons{
@@ -55,6 +71,8 @@
         border:2px solid #fff;
     }
 }
+
+
  
 }
 /*
